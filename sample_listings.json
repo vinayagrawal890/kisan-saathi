@@ -1,0 +1,26 @@
+[
+  {
+    "farmer": "Ramesh Kumar",
+    "village": "Hindaun, Karauli",
+    "crop": "Wheat / Gehu",
+    "quantity_quintals": 25,
+    "expected_price_inr_per_quintal": 2450,
+    "is_fictional_sample": true
+  },
+  {
+    "farmer": "Sita Devi",
+    "village": "Todabhim, Karauli",
+    "crop": "Mustard / Sarson",
+    "quantity_quintals": 12,
+    "expected_price_inr_per_quintal": 5600,
+    "is_fictional_sample": true
+  },
+  {
+    "farmer": "Mohan Lal",
+    "village": "Gangapur, Rajasthan",
+    "crop": "Bajra",
+    "quantity_quintals": 18,
+    "expected_price_inr_per_quintal": 2200,
+    "is_fictional_sample": true
+  }
+]

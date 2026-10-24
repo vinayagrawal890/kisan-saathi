@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kisan Saathi | Rural Livelihoods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">🌱</span><div><strong>Kisan Saathi</strong><small id="tagline">Kisaan aur bazaar ke beech ek digital pul</small></div></div>
+    <button id="languageToggle" class="secondary" type="button">English</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow" id="eyebrow">RURAL LIVELIHOODS • RAJASTHAN</p>
+        <h1 id="heroTitle">Apni fasal ko sahi bazaar se jodiye.</h1>
+        <p id="heroText">Fasal ki listing banayein, buyer opportunities dekhein aur local livelihood information ek hi jagah paayein.</p>
+        <a class="button" href="#addListing" id="listCropBtn">Fasal list karein</a>
+      </div>
+      <div class="hero-card"><span>🌾</span><h3 id="heroCardTitle">Aapki fasal, aapka bazaar</h3><p id="heroCardText">Yeh demo sample data use karta hai. Listings verified market prices nahi hain.</p></div>
+    </section>
+
+    <section class="stats" aria-label="Prototype overview">
+      <div><strong id="listingCount">3</strong><span id="statListings">Sample listings</span></div>
+      <div><strong>2</strong><span id="statFeatures">Core features</span></div>
+      <div><strong>0₹</strong><span id="statCost">Demo cost</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><p class="eyebrow" id="marketEyebrow">MARKET CONNECT</p><h2 id="marketTitle">Fasal listings</h2></div><input id="searchInput" type="search" placeholder="Fasal ya gaon search karein" aria-label="Search listings"></div>
+      <div id="listingGrid" class="grid"></div>
+    </section>
+
+    <section id="addListing" class="section form-section">
+      <div><p class="eyebrow" id="formEyebrow">FARMER LISTING</p><h2 id="formTitle">Apni fasal ki listing banayein</h2><p id="formText">Demo ke liye details browser mein hi dikhengi; server par upload nahi hoti.</p></div>
+      <form id="cropForm">
+        <label><span id="labelFarmer">Kisaan ka naam</span><input id="farmerName" required maxlength="60" placeholder="Jaise: Ramesh Kumar"></label>
+        <label><span id="labelVillage">Gaon / zila</span><input id="village" required maxlength="80" placeholder="Jaise: Hindaun, Karauli"></label>
+        <label><span id="labelCrop">Fasal</span><select id="crop" required><option value="">Fasal chunein</option><option>Wheat / Gehu</option><option>Mustard / Sarson</option><option>Bajra</option><option>Gram / Chana</option><option>Other / Anya</option></select></label>
+        <div class="two-col">
+          <label><span id="labelQuantity">Quantity (quintal)</span><input id="quantity" type="number" min="1" max="100000" required placeholder="10"></label>
+          <label><span id="labelPrice">Expected price (₹/quintal)</span><input id="price" type="number" min="1" max="1000000" required placeholder="2500"></label>
+        </div>
+        <button class="button" type="submit" id="submitListing">Listing add karein</button>
+        <p id="formMessage" class="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="notice"><strong id="noticeTitle">Prototype note</strong><p id="noticeText">Yeh educational prototype hai. Ismein sample listings hain; real-time mandi prices, verified buyers, login, payments ya backend integration abhi shamil nahi hain. Real use se pehle data aur claims verify karein.</p></section>
+  </main>
+  <footer>© 2026 Kisan Saathi · <span id="footerText">Built as a rural livelihoods hackathon prototype</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
